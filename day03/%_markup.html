@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5324ec882d.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: rgb(233, 246, 255);
+        }
+
+        section {
+            width: 100%;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            border: 2px solid rgb(86, 108, 148);
+            margin: 16px;
+            padding: 0 16px;
+            height: 80px;
+            position: relative;
+        }
+
+        li::before {
+            /* ::before - 가상요소 : 컨텐츠가 보이기 전의 요소를 숨겨서 만들어준다 */
+            content: '';
+            width: 0%;
+            height: 80px;
+            position: absolute;
+            background-color: rgb(86, 108, 148);
+            display: block;
+            left: 0;
+            /* top: 0; */
+            z-index: -1;
+            /* z-index: -1 -> 맨 위에 덮여있는 요소를 하나만 밑으로 넣을게 */
+            transition: 0.7s;
+            /* 시작점을 left로 지정 해 주었으므로, 시간설정만 넣어주면 자연스러운 속도로 보여줄 수 있다 */
+        }
+
+        li:nth-child(1):hover::before {
+            /* li 중 첫번째 있는 요소에 마우스오버 했을 때, 첫번째 있는 비포의 요소를 부여할게 */
+            width: 20%;
+        }
+        li:nth-child(2):hover::before {
+            width: 40%;
+        }
+        li:nth-child(3):hover::before {
+            width: 60%;
+        }
+        li:nth-child(4):hover::before {
+            width: 80%;
+        }
+        li:nth-child(5):hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>웹부터 포폴까지!</h1>
+        <ul>
+            <li>
+                <h2>
+                    20%
+                    <i class="fa-solid fa-heart"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    40%
+                    <i class="fa-solid fa-face-kiss-beam"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    60%
+                    <i class="fa-brands fa-gratipay"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    80%
+                    <i class="fa-solid fa-clover"></i>
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    100%
+                    <i class="fa-solid fa-shield-heart"></i>
+                </h2>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

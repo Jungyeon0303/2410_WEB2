@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(116, 148, 68);
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+            width: 200px;
+            display: inline-block;
+            margin: 16px;
+            font-size: 20px;
+            height: 150px;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+        }
+
+        a > span:first-child {
+            /* a 안에 span의 첫번째 아이들에게 적용하는 값 */
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        a > span:last-child {
+            /* a 안의 span중 마지막 아이들에게 적용해줘 */
+            color: rgb(255, 204, 65);
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        a:hover span:last-child {
+            /* a를 마우스오버하면 span의 마지막 아이들에게 적용해줘  */
+            opacity: 1;
+            transform: translateY(25px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <span>HTML</span>
+                    <span>mark up</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>CSS</span>
+                    <span>style</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Javascript</span>
+                    <span>coding</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>UXUI Design</span>
+                    <span>Design</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Portfolio</span>
+                    <span>Project</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
