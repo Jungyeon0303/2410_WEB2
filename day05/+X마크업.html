@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+X마크업</title>
+    <script src="https://kit.fontawesome.com/5324ec882d.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            background-color: cadetblue;
+            color: #FFF;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        .plus_btn:hover > i {
+            animation-name: plus;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+        }
+
+
+        @keyframes plus {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(-225deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <ul>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+        </ul>
+        <div class="plus_btn">
+            <i class="fa-solid fa-plus fa-2x"></i>
+        </div>
+    </header>
+</body>
+</html>

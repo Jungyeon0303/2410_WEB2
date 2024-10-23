@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네모의꿈</title>
+    <style>
+        .animation_box {
+            width: 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+            border-radius: 25px;
+            /* animation-name: nemo;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease; */
+
+            /* animation: name이름 duration지속시간 timing-function타이밍함수 delay대기시간  iteration-count반복횟수 derection애니메이션방향 fill-mode전후방향 play-state재생정지; */
+        
+            animation: nemo 6s linear infinite;
+        }
+
+        @keyframes nemo {
+            20% {
+                transform: translateX(250px);
+            }
+
+            60% {
+                transform: translate(250px, 250px);
+            }
+
+            80% {
+                transform: translateY(250px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation_box"></div>
+</body>
+
+</html>
