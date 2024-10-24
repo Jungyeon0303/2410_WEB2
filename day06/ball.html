@@ -22,6 +22,14 @@
             animation: ball1 2s cubic-bezier(0.18, 0.01, 0, 0.97)  infinite;
         }
 
+        .ball2 {
+            animation: ball2 2s cubic-bezier(0.18, 0.01, 0, 0.97) 0.5s infinite;
+        }
+
+        .ball3 {
+            animation: ball3 2s cubic-bezier(0.18, 0.01, 0, 0.97) 1s infinite;
+        }
+
         @keyframes ball1{
             0% {
                 transform: translateY(-150px);
@@ -35,6 +43,35 @@
                 transform: translateY(-150px);
             }
         }
+
+        @keyframes ball2{
+            0% {
+                transform: translateY(-150px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-150px);
+            }
+        }
+
+        @keyframes ball3{
+            0% {
+                transform: translateY(-150px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-150px);
+            }
+        }
+        
 
     </style>
 </head>
