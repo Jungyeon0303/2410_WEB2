@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지나가는고양이</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            width: 250px;
+            height: 50px;
+            background-color: rgb(29, 58, 112);
+            border-radius: 7px;
+            border: none;
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            margin: 10% 40%;
+        }
+
+        button:focus {
+            
+        }
+
+        ul {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        li {
+            list-style: none;
+            min-width: 268px;
+            height: 150px;
+            margin: 0 16px;
+            animation: cat 2s ease-in-out 1;
+        }
+
+        li:nth-child(1) {
+            background: url(/day07/1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(2) {
+            background: url(/day07/2.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(3) {
+            background: url(./3.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(4) {
+            background: url(./4.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(5) {
+            background: url(/day07/5.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(6) {
+            background: url(/day07/6.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(7) {
+            background: url(/day07/7.jpeg);
+            background-size: cover;
+        }
+
+        li:nth-child(8) {
+            background: url(/day07/8.jpg);
+            background-size: cover;
+        }
+
+        /* @keyframes cat {
+            from {
+                transform: translateX(0);
+            }   
+            to {
+                transform: translateX(-100%);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <section>
+        <button>고양이가 지나가요</button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>
