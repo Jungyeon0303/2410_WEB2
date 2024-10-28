@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            text-align: center;
+            margin: 50px 0;
+            display: block;
+            padding: 16px 24px;
+            font-size: 24px;
+            background: pink;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        ul {
+            width: 1200px;
+            /* margin: 0 auto */
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+
+        }
+
+        button:focus ul li {
+            animation: slide 5s forwards;
+            animation-timing-function: ease-in-out;
+        }
+
+        li {
+            list-style: none;
+            min-width: 268px;
+            height: 150ox;
+            margin: 0 16px;
+            animation-timing-function: ease-in-out;
+        }
+
+        li:nth-child(1) {
+            background: url(./1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(2) {
+            background: url(./2.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(3) {
+            background: url(./3.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(4) {
+            background: url(./4.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(1) {
+            background: url(./1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(1) {
+            background: url(./1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(1) {
+            background: url(./1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(1) {
+            background: url(./1.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <button>고양이가 지나갑니다</button>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

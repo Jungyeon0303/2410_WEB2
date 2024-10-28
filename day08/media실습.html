@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어실습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .box {
+            width: 500px;
+            height: 500px;
+            background-color: chocolate;
+        }
+
+        .box1 {
+            width: 100%;
+            background-color: blueviolet;
+        }
+
+        @media (max-width: 1280px){
+            .box1 {
+                display: none;
+            }
+        }
+
+
+
+
+        .box2 {
+            width: 100%;
+            background-color: cadetblue;
+            display: none;
+        }
+
+        @media (min-width:760px) and (max-width:1280px) {
+            .box2 {
+                display: block;
+            }
+        }
+
+
+
+
+        .box3 {
+            width: 100%;
+            background-color: darkolivegreen;
+            display: none;
+        }
+
+        @media (max-width:760px) {
+            .box3 {
+                display: block;
+            }
+        }
+
+        .box4 {
+            width: 100%;
+            background-color: cornflowerblue;
+            display: none;
+        }
+
+        @media (max-width:360px) {
+            .box4 {
+                display: block;
+            }
+            .box3 {
+                display: none;
+            }
+        } */
+
+
+
+        .box {
+            width: 300px;
+            height: 300px;
+            font-size: 24px;
+        }
+
+        .box:nth-child(1) {
+            background-color: aqua;
+            width: 100%;
+        }
+
+        .box:nth-child(2) {
+            background-color: blue;
+            display: none;
+        }
+
+        .box:nth-child(3) {
+            background-color: blueviolet;
+            display: none;
+        }
+
+        .box:nth-child(4) {
+            background-color: brown;
+            display: none;
+        }
+
+        @media (max-width: 1280px) {
+            .box:nth-child(1) {
+                display: none;
+            }
+        }
+
+        @media (min-width: 760px) and (max-width:1280px) {
+            .box:nth-child(2) {
+                display: block;
+            }
+        }
+
+        @media (max-width:760px) {
+            .box:nth-child(3) {
+                display: block;
+            }
+        }
+
+        @media (max-width:360px) {
+            .box:nth-child(4){
+                display: block;
+            }
+            .box:nth-child(3){
+                display: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box box1">
+            저는 브라우저 크기의 100%를 차고 브라우저가 1280까지 줄어들면 사라져요.
+        </div>
+    
+        <div class="box box2">
+            저는 브라우저의 크기가 760보다 크고 1280보다 작을때만 나타나요.
+        </div>
+
+        <div class="box box3">
+            저는 브라우저의 크기가 760px 이하일때 나타나고, 360px 보다 작아지면 다시 사라져요.
+        </div>
+
+        <div class="box box4">
+            저는 브라우저의 크기가 360px 이하일때 나타나요.
+        </div>
+    </section>
+</body>
+</html>
