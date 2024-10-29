@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약헤더 마크업</title>
+    <script src="https://kit.fontawesome.com/5324ec882d.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url(./keyvisual02_CUSTOMERcolor_PC.jpg);
+            height: 100vh;
+            background-size: cover;
+        }
+        header {
+            /* width: 100%; */
+        }
+
+        div {
+            /* display: flex; */
+        }
+
+
+        .pc_header_top > ul {
+            display: flex;
+            /* margin: 0 auto; */
+            font-size: 12px;
+            font-weight: 800;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #000;
+
+        }
+
+        .pc_header_top > ul > li {
+            list-style: none;
+            margin-right: 32px;
+        }
+
+        .pc_header_bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .pc_header_bottom > nav > ul{
+            display: flex;
+        }
+
+        .pc_header_bottom > nav > ul > li{
+            list-style: none;
+            margin: 0 16px;
+           
+        }
+
+        .pc_header_bottom > h1 {
+            background: url(https://www.dapharm.com/img/logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
+            width: 150px;
+            height: 26px;
+            background-size: cover;
+            margin-left: 32px;
+        }
+
+        .header_right_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="pc_header_top">
+            <ul>
+                <li>준법경영</li>
+                <li>판매약국찾기</li>
+                <li>감사제보하기</li>
+            </ul>
+        </div>
+        <div class="pc_header_bottom">
+            <h1></h1>
+            <nav>
+                <ul>
+                    <li>회사경영</li>
+                    <li>브랜드</li>
+                    <li>R&D</li>
+                    <li>정도경영</li>
+                    <li>뉴스룸</li>
+                    <li>인재채용</li>
+                    <li>고객지원</li>
+                </ul>
+            </nav>
+            <div class="header_right_box">
+                <div class="search_box">
+                    <input type="text" placeholder="검색어입력">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </div>
+                <figure>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                </figure>
+                <figure>
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </figure>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
