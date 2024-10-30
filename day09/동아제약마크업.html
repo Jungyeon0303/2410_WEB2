@@ -8,6 +8,13 @@
     <script src="https://kit.fontawesome.com/5324ec882d.js" crossorigin="anonymous"></script>
 
     <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
         * {
             padding: 0;
             margin: 0;
@@ -17,17 +24,16 @@
             background: url(./keyvisual02_CUSTOMERcolor_PC.jpg);
             height: 100vh;
             background-size: cover;
-        }
-        header {
-            /* width: 100%; */
+            font-family: 'Pretendard-Regular';
         }
 
-        div {
-            /* display: flex; */
-        }
+        /* 
+        .pc_header {
+            display: none;
+        } */
 
 
-        .pc_header_top > ul {
+        .pc_header_top>ul {
             display: flex;
             /* margin: 0 auto; */
             font-size: 12px;
@@ -39,29 +45,31 @@
 
         }
 
-        .pc_header_top > ul > li {
+        .pc_header_top>ul>li {
             list-style: none;
             margin-right: 32px;
         }
 
-        .pc_header_bottom {
+        .pc_header_bottom,
+        .icon {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
 
-        .pc_header_bottom > nav > ul{
+        .pc_header_bottom>nav>ul {
             display: flex;
         }
 
-        .pc_header_bottom > nav > ul > li{
+        .pc_header_bottom>nav>ul>li {
             list-style: none;
             margin: 0 16px;
-           
+            font-size: 16px;
+
         }
 
-        .pc_header_bottom > h1 {
+        .pc_header_bottom>h1 {
             background: url(https://www.dapharm.com/img/logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
             width: 150px;
             height: 26px;
@@ -74,38 +82,143 @@
             justify-content: space-between;
             align-items: center;
         }
+
+        @media (max-width:1440px) {
+
+            /* max-: 브라우저가 작아질 때, min-브라우저가 커질 때 */
+            .pc_header_bottom>nav>ul>li {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .serch_box>input {
+                width: 100px;
+
+
+            }
+
+            .header_right_box>div,
+            .header_right_box>figure {
+                margin: 0 16px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .pc_header_bottom>h1 {
+                width: 100px;
+                height: 18px;
+            }
+
+            .pc_header_bottom>nav>ul>li {
+                margin: 0 4px;
+                font-size: 12px;
+            }
+
+            .serch_box {
+                padding: 8px;
+            }
+
+        }
+
+        .mo_header {
+            margin: 10px auto;
+            padding: 16px;
+            display: flex;
+            /* justify-content: flex-end; */
+            justify-content: space-between;
+            border-top: 1px solid #3b3b3b;
+            border-bottom: 1px solid #3b3b3b;
+        }
+
+        .mo_header>h1 {
+            background: url(https://www.dapharm.com/img/logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
+            width: 150px;
+            height: 26px;
+            background-size: cover;
+        }
+
+        .icon>figure {
+            margin: 0 8px;
+        }
+
+        /* 
+        @media (max-width: 760px){
+            .pc_header {
+                display: none;
+            }
+            .mo_header {
+                display: block;
+            }
+        }
+
+        @media (min-width:760px) {
+            .mo_header {
+                display: none;
+            }
+        } */
+
+        @media (max-width:760px) {
+            .pc_header {
+                display: none;
+            }
+
+            .mo_header {
+                display: flex;
+            }
+
+            body {
+                background: url(./keyvisual02_CUSTOMERcolor_PC.jpg);
+                height: 100vh;
+                background-size: cover;
+                background-position: 25%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="pc_header_top">
-            <ul>
-                <li>준법경영</li>
-                <li>판매약국찾기</li>
-                <li>감사제보하기</li>
-            </ul>
-        </div>
-        <div class="pc_header_bottom">
-            <h1></h1>
-            <nav>
+        <div class="pc_header">
+            <div class="pc_header_top">
                 <ul>
-                    <li>회사경영</li>
-                    <li>브랜드</li>
-                    <li>R&D</li>
-                    <li>정도경영</li>
-                    <li>뉴스룸</li>
-                    <li>인재채용</li>
-                    <li>고객지원</li>
+                    <li>준법경영</li>
+                    <li>판매약국찾기</li>
+                    <li>감사제보하기</li>
                 </ul>
-            </nav>
-            <div class="header_right_box">
-                <div class="search_box">
-                    <input type="text" placeholder="검색어입력">
-                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </div>
+            <div class="pc_header_bottom">
+                <h1></h1>
+                <nav>
+                    <ul>
+                        <li>회사경영</li>
+                        <li>브랜드</li>
+                        <li>R&D</li>
+                        <li>정도경영</li>
+                        <li>뉴스룸</li>
+                        <li>인재채용</li>
+                        <li>고객지원</li>
+                    </ul>
+                </nav>
+                <div class="header_right_box">
+                    <div class="search_box">
+                        <input type="text" placeholder="검색어입력">
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    </div>
+                    <figure>
+                        <i class="fa-solid fa-globe fa-2xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </figure>
                 </div>
+            </div>
+        </div>
+
+        <div class="mo_header">
+            <h1></h1>
+            <div class="icon">
                 <figure>
-                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                 </figure>
                 <figure>
                     <i class="fa-solid fa-bars fa-2x"></i>
