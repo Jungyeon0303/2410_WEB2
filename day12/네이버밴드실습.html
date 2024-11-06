@@ -15,7 +15,7 @@
             padding: 20px;
         }
 
-        nav {
+        header > ul {
             display: flex;
 
         }
@@ -23,10 +23,15 @@
         .sec01 {
             background-color: #f6f8fa;
             display: flex;
+            margin: 0 20px;
         }
 
         .main_img>img {
             width: 540px;
+        }
+
+        .main > div {
+            display: inline;
         }
     </style>
 </head>
@@ -38,13 +43,13 @@
         </h1>
         <ul>
             <li>
-                <select name="language" id="">
-                    <option value="">English</option>
-                    <option value="">한국어</option>
-                    <option value="">日本語</option>
-                    <option value="">Español</option>
-                    <option value="">繁體中文</option>
-                    <option value="">Bahasa Indonesia</option>
+                <select name="언어" id="language">
+                    <option value="ko">한국어</option>
+                    <option value="eng">English</option>
+                    <option value="jp">日本語</option>
+                    <option value="esp">Español</option>
+                    <option value="ch">繁體中文</option>
+                    <option value="indo">Bahasa Indonesia</option>
                 </select>
             </li>
             <li>
