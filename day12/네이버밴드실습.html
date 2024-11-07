@@ -60,9 +60,64 @@
         .sec01 {
             background-color: #f6f8fa;
             display: flex;
-            padding-top: 80px;
+            padding-top: 40px;
+            justify-content: center;   
+        }
 
-            
+        .sec01 > article {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            gap: 16px;
+        }
+
+        .main_right > h2 {
+            font-size: 45px;
+        }
+
+        .log_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
+            height: 50px;
+            background-color: #21c531;
+            border-radius: 2px;
+        }
+
+        .log_btn > a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .sign_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
+            height: 50px;
+            border: 1px solid #dbdbdb;
+            background-color: #fff;
+        }
+
+        .sign_btn > a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .band_menual {
+            font-size: 13px;
+        }
+
+        .manual_link {
+            color: #21c531;
+            font-weight: 800;
         }
 
         .main_img>img {
@@ -73,6 +128,41 @@
         .main > div {
             display: inline;
         }
+
+        .intro {
+            background-image: url(./네이버밴드이미지/bg_intro.jpg);
+            background-position: 50%;
+            height: 540px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .intro > h2 {
+            font-size: 45px;
+        }
+
+        .intro > h3 {
+            margin: 10px auto;
+            text-align: center;
+            line-height: 25px;
+            
+        }
+
+        .introduction {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 50px;
+        }
+        .introduction > div > figure > img {
+            width: 300px;
+            height: 160px;
+        }
+
     </style>
 </head>
 
@@ -127,20 +217,21 @@
                         회원가입
                     </a>
                 </div>
-                <p>
+                
+                <p class="band_menual">
                     내게 맞는 밴드를 만나려면
-                    <a href="#">
+                    <a href="#" class="manual_link">
                         밴드 찾기
                     </a>
                 </p>
-                <p>
+                <p class="band_menual">
                     모임별 밴드 활용법
-                    <a href="#">
+                    <a href="#" class="manual_link">
                         밴드 가이드 보기
                     </a>
                 </p>
-                <p>만 13세 미만이라면?
-                    <a href="#">
+                <p class="band_menual">만 13세 미만이라면?
+                    <a href="#" class="manual_link">
                         '밴드 키즈' 알아보기
                     </a>
                 </p>
@@ -150,9 +241,9 @@
 
     <section class="sec02">
         <article class="intro">
-            <h1>
+            <h2>
                 모임을 위한 공간, 밴드
-            </h1>
+            </h2>
             <h3>
                 밴드는 그룹 멤버와 함께 하는 공간입니다.
                 <br>
@@ -263,19 +354,45 @@
 
     <footer>
         <ul>
-            <li>블로그</li>
-            <li>공지사항</li>
-            <li>스티커제안</li>
-            <li>광고</li>
-            <li>이용약관</li>
-            <li>개인정보처리방침</li>
-            <li>쿠키 설정</li>
-            <li>CCPA 개인정보 관리</li>
-            <li>청소년 보호를 위한 노력</li>
-            <li>활동정책</li>
-            <li>권리침해 신고안내</li>
-            <li>개발자</li>
-            <li>도움말</li>
+            <li>
+                <a href="#">블로그</a>
+            </li>
+            <li>
+                <a href="#">공지사항</a>
+            </li>
+            <li>
+                <a href="#">스티커제안</a>
+            </li>
+            <li>
+                <a href="#">광고</a>
+            </li>
+            <li>
+                <a href="#">이용약관</a>
+            </li>
+            <li>
+                <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+                <a href="#">쿠키 설정</a>
+            </li>
+            <li>
+                <a href="#">CCPA 개인정보 관리</a>
+            </li>
+            <li>
+                <a href="#">청소년 보호를 위한 노력</a>
+            </li>
+            <li>
+                <a href="#">활동정책</a>
+            </li>
+            <li>
+                <a href="#">권리침해 신고안내</a>
+            </li>
+            <li>
+                <a href="#">개발자</a>
+            </li>
+            <li>
+                <a href="#">도움말</a>
+            </li>
         </ul>
         <P>
             BANDⓒ2024
